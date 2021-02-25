@@ -1,0 +1,21 @@
+* {
+    /* 为适应多浏览器的配置问题，设置全局的margin和padding */
+    margin: 0;
+    padding: 0;
+}
+.boxes{
+    /* 设置九宫格盒子最大宽度为640px */
+    max-width: 640px;
+    /* 块级元素使用margin: 0 anto; 可以实现居中效果 */
+    margin: 50px auto;
+}
+.box{
+    width: 32%;
+    margin: 1% 0 0 1%;
+    /* 不设置height而是设置padding上下这样自适应较好 */
+    padding: 16% 0;
+    /* div为块级元素，块级元素会独占一行，其宽度自动填满其父元素宽度；因此使用float */
+    float: left;
+    background-color: orange;
+    border-radius: 5%;
+}
